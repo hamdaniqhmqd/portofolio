@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-light dark:bg-dark dark:bg-opacity-60 bg-opacity-60 backdrop-blur-sm;
+}
+
+.humberger-line {
+  @apply w-[28px] h-[2px] my-2 block bg-dark dark:bg-light transition duration-300 ease-in-out;
+}
+
+.humberger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.humberger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.humberger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
